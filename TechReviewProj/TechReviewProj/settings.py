@@ -75,7 +75,9 @@ WSGI_APPLICATION = 'TechReviewProj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES =  'default': {
+DATABASES ={
+    
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'TechReviewDB',
         'USER' : 'postgres',
