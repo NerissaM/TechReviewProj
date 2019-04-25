@@ -37,7 +37,7 @@ class Product(models.Model):
         db_table='product'
         verbose_name_plural='products' 
 
-class Reivew(models.Model):
+class Review(models.Model):
     reviewtitle=models.CharField(max_length=255)
     reviewdate=models.DateField()
     product=models.ForeignKey(Product, on_delete=models.DO_NOTHING)
