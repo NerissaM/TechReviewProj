@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Club App</h2>
+<table class="table">
+  <tr>
+      <th>Name</th>
+      <th>Type</th>
+  </tr>
+  {% for p in products_list %}
+    <tr>
+        <td>{{ p.productname }}</td>
+        <td> {{p.producttype }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}
